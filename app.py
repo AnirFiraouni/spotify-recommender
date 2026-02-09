@@ -9,7 +9,7 @@ st.set_page_config(page_title="Spotify Recommender", page_icon="🎵")
 # Barre latérale (Sidebar) pour tes infos
 with st.sidebar:
     st.header("À propos")
-    st.write("Cette application a été développée par un étudiant en **MAM3 à Polytech Nice Sophia**.")
+    st.write("J'ai devloppé cette aplplication en tant que projet personnel en **MAM3 à Polytech Nice Sophia**.")
     st.info("💡 **But du projet :** Appliquer des algorithmes de KNN (Voisins les plus proches) pour la recommandation musicale.")
     st.write("---")
     st.write("📧 **Contact :** [anir.firaouni05@gmail.com]")
@@ -85,3 +85,4 @@ if st.button("Recommander"):
 
     fig.update_layout(polar=dict(radialaxis=dict(visible=True, range=[0, 1])), showlegend=True)
     st.plotly_chart(fig)
+

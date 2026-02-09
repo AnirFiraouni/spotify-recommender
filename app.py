@@ -5,7 +5,15 @@ import plotly.graph_objects as go
 
 # 1. Configuration de la page
 st.set_page_config(page_title="Spotify Recommender", page_icon="🎵")
-
+ 
+# Barre latérale (Sidebar) pour tes infos
+with st.sidebar:
+    st.header("À propos")
+    st.write("Cette application a été développée par un étudiant en **MAM3 à Polytech Nice Sophia**.")
+    st.info("💡 **But du projet :** Appliquer des algorithmes de KNN (Voisins les plus proches) pour la recommandation musicale.")
+    st.write("---")
+    st.write("📧 **Contact :** [anir.firaouni05@gmail.com]")
+    st.write("🔗 **LinkedIn :** [https://www.linkedin.com/in/firaounianir/]")
 st.title("🎵 Le Recommendateur d'Ambiance")
 st.markdown("Choisis une chanson, je t'en trouve 5 autres mathématiquement proches !")
 

@@ -1,6 +1,6 @@
 # 🎵 Spotify Mood Recommender
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://spotify-recommender-anirfiraouni.streamlit.app/])
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://spotify-recommender-anirfiraouni.streamlit.app])
 
 **Une application de Data Science interactive qui recommande des musiques basées sur leurs signatures audio mathématiques.**
 

@@ -78,4 +78,5 @@ Si vous souhaitez faire tourner le projet sur votre machine :
 * 🔭 En recherche active d'une **Alternance en Data Science / Data Analysis** (Début : Septembre 2026).
 * 📫 **Email :** [anir.firaouni05@gmail.com]
 * 🔗 **LinkedIn :** [https://www.linkedin.com/in/firaounianir/]
+* **Lien Kaggle du DataSet:** [https://www.kaggle.com/datasets/julianoorlandi/spotify-top-songs-and-audio-features/data]
 

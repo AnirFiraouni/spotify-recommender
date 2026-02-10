@@ -9,7 +9,7 @@ st.set_page_config(page_title="Spotify Recommender", page_icon="🎵")
 # Barre latérale (Sidebar) pour tes infos
 with st.sidebar:
     st.header("À propos")
-    st.write("J'ai devloppé cette aplplication en tant que projet personnel en **MAM3 à Polytech Nice Sophia**.")
+    st.write("Cette application a été développée par un étudiant en **MAM3 à Polytech Nice Sophia**.")
     st.info("💡 **But du projet :** Appliquer des algorithmes de KNN (Voisins les plus proches) pour la recommandation musicale.")
     st.write("---")
     st.write("📧 **Contact :** [anir.firaouni05@gmail.com]")
@@ -21,10 +21,21 @@ st.markdown("Choisis une chanson, je t'en trouve 5 autres mathématiquement proc
 # Pour l'exemple, assure-toi d'avoir un fichier avec ces colonnes
 @st.cache_data
 def load_data():
-    # Remplace par le vrai nom de ton fichier Kaggle
-    df = pd.read_csv("spotify_data.csv") 
-    # On garde un échantillon pour que ça aille vite si le fichier est gros
-    return df.sample(n=10000).reset_index(drop=True)
+    df = pd.read_csv("spotify_data.csv")
+    
+    # 1. On renomme la colonne 'artist_names' en 'artists' pour que le reste du code comprenne
+    df = df.rename(columns={'artist_names': 'artists'})
+    
+    # 2. On trie par popularité (streams) pour garder les versions les plus connues
+    # (Comme ça, si une chanson est en double, on garde celle qui a le plus de vues)
+    if 'streams' in df.columns:
+        df = df.sort_values('streams', ascending=False)
+    
+    # 3. On supprime les doublons (même titre, même artiste)
+    df = df.drop_duplicates(subset=['track_name', 'artists'])
+    
+    # 4. On retourne le tout
+    return df
 
 try:
     df = load_data()
@@ -85,4 +96,3 @@ if st.button("Recommander"):
 
     fig.update_layout(polar=dict(radialaxis=dict(visible=True, range=[0, 1])), showlegend=True)
     st.plotly_chart(fig)
-

@@ -23,7 +23,7 @@ st.markdown("Choisis une chanson, l'IA t'en trouve 5 autres mathématiquement pr
 def load_data():
     # ⚠️ REMPLACE ICI PAR LE NOM DE TON NOUVEAU GROS FICHIER CSV 
     # Astuce : Si tu le mets sur GitHub, compresse-le en .zip et mets : pd.read_csv("spotify_data.zip", compression='zip')
-    df = pd.read_csv("spotify_data.zip", compression='zip') 
+    df = pd.read_csv("spotify_600k.zip", compression='zip')
     
     # On définit les variables mathématiques
     features_knn = ['danceability', 'energy', 'valence', 'tempo', 'acousticness', 'instrumentalness', 'liveness']

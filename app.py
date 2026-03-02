@@ -10,13 +10,13 @@ st.set_page_config(page_title="Spotify Recommender", page_icon="🎵", layout="c
 with st.sidebar:
     st.header("À propos")
     st.write("J'ai développé cette application en tant que projet personnel en **MAM3 à Polytech Nice Sophia**.")
-    st.info("💡 **But du projet :** Appliquer l'algorithme KNN sur une base de données Big Data (> 1 Million de titres) pour la recommandation musicale.")
+    st.info("💡 **But du projet :** Appliquer l'algorithme KNN sur une base de données Big Data pour la recommandation musicale.")
     st.write("---")
     st.write("📧 **Contact :** [anir.firaouni05@gmail.com]")
     st.write("🔗 **LinkedIn :** [https://www.linkedin.com/in/firaounianir/]")
 
 st.title("🎵 Le Recommandateur d'Ambiance")
-st.markdown("Choisis une chanson, l'IA t'en trouve 5 autres mathématiquement proches parmi **plus d'un million** de titres !")
+st.markdown("Choisis une chanson, l'IA t'en trouve 5 autres mathématiquement proches parmi **des milliers** de titres !")
 
 # --- 2. CHARGEMENT DES DONNÉES (CACHE) ---
 @st.cache_data

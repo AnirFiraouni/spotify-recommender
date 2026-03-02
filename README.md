@@ -2,7 +2,7 @@
 
 Une application web interactive de Data Science qui recommande des musiques basées sur leurs signatures audio mathématiques. Développé dans le cadre de mon portfolio en **MAM3 à Polytech Nice Sophia**.
 
-**[👉 TESTER L'APPLICATION ICI]** *(Remplace ce texte par le lien de ton site Streamlit !)*
+**[👉 TESTER L'APPLICATION ICI]** *(https://spotify-recommender-anirfiraouni.streamlit.app/)*
 
 ## 🧠 L'Intelligence Artificielle derrière le projet
 Ce projet utilise un algorithme de **K-Nearest Neighbors (KNN)** couplé à un `StandardScaler` pour analyser et comparer les *Audio Features* (tempo, énergie, danceability, etc.) des musiques.
@@ -17,3 +17,6 @@ Ce projet utilise un algorithme de **K-Nearest Neighbors (KNN)** couplé à un `
 * **Streamlit** (Interface Web et mise en cache des données)
 * **Plotly** (Graphiques interactifs)
 * **Git / GitHub** (Déploiement)
+
+  Anir Firaouni
+  

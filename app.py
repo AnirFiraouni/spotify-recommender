@@ -104,7 +104,7 @@ if mot_cle:
                     # AJOUT DU LIEN SPOTIFY (On vérifie si la colonne s'appelle 'id' ou 'track_id')
                     id_col = 'id' if 'id' in df.columns else 'track_id' if 'track_id' in df.columns else None
                     if id_col:
-                        st.markdown(f"[▶️ Écouter sur Spotify](https://open.spotify.com/track/TON_ID{voisin[id_col]})")
+                        st.markdown(f"[▶️ Écouter sur Spotify](https://open.spotify.com/track/{voisin[id_col]})")
                 with col2:
                     st.caption(f"{similarite:.1f}% match")
             
